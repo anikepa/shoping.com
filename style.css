@@ -1,0 +1,341 @@
+   * {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+       font-family: gilroy;
+   }
+
+   html,
+   body {
+       height: 100%;
+       width: 100%;
+   }
+
+   #main {
+
+       width: 100vw;
+   }
+
+   nav {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding: 3vh 6vw;
+       height: 7vh;
+
+   }
+
+   .nc {
+
+       display: flex;
+       align-items: center;
+       gap: 5vw;
+   }
+
+   nav>h1 {
+       position: relative;
+       text-transform: uppercase;
+       font-weight: 900;
+       font-size: 2vw;
+    }
+    nav> h1::before{
+  content:"~CARIANA~";
+  color: green;
+  border-right:4px solid green;
+   position:absolute;
+   left:0;  
+   right:0;
+   animation:  abcd 3s linear  infinite both;
+  overflow: hidden;
+}
+@keyframes  abcd {
+0%{
+    width: 0%;
+}
+50%{width:100%;}
+100%{width:0%;}
+}
+
+   nav .nc h1 {
+       font-size: 1.9vw;
+       text-transform: capitalize;
+       font-weight: 200;
+
+   }
+
+   nav .nc h1:hover {
+       text-align: center;
+       border-bottom: 0.5vh solid black;
+   }
+
+   nav i {
+       font-size: 20px;
+       margin-left: 5px;
+   }
+
+   .ceneter {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .slider {
+       margin-top: 5vh;
+       width: 90vw;
+       height: 60vh;
+       border: 2px solid black;
+       background-image: url("./OIP\ \(1\).jfif");
+       background-size: cover;
+       background-repeat: no-repeat;
+       animation: a 3s linear infinite backwards;
+       overflow: hidden;
+   }
+
+   @keyframes a {
+       to {
+           background-image: url(./istockphoto-1318778162-170667a.jpg);
+
+       }
+   }
+
+   .info {
+
+       justify-content: center;
+       align-items: center;
+       height: 40vh;
+       display: flex;
+   }
+
+   .info1 {
+       flex-shrink: 0;
+       flex-wrap: wrap;
+       gap: 3vh;
+       flex-direction: column;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 30vh;
+       width: 20vw;
+   }
+
+   .info1 .icon {
+       background-color: rgba(0, 0, 0, 0.188);
+       height: 65px;
+       width: 65px;
+       border-radius: 50%;
+   }
+
+   .info1 .icon i {
+       position: relative;
+       font-size: 40px;
+       left: 17PX;
+       top: 10px;
+   }
+
+   .dets {
+       width: 100%;
+   }
+
+   .dets-h1 {
+       font-size: 1.5vw;
+       font-weight: 400;
+       text-align: justify;
+   }
+
+   .dets p {
+       text-align: center;
+       font-size: 1vw;
+   }
+
+   .part2 {
+       gap: 5vw;
+       padding: 5vh 10vw;
+       display: flex;
+   }
+
+   .part2-box {
+       justify-content: space-evenly;
+       display: flex;
+
+       height: 35vh;
+       width: 40vw;
+       background-color: rgba(0, 0, 0, 0.182);
+   }
+
+   .part2-box:hover {
+       border: 3px dashed black;
+
+   }
+
+   #part-box1 .IMG {
+       margin-left: -11PX;
+       background-position: center;
+       background-size: cover;
+       width: 20vw;
+       background-image: url(./OIP.jfif);
+   }
+
+   .part2-box h1 {
+       text-transform: uppercase;
+       letter-spacing: 0.1vw;
+       margin-top: 15vh;
+       font-weight: 500;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       font-size: 2vw;
+   }
+
+   #part-box2 .IMG1 {
+       background-image: url(./photo-1560769629-975ec94e6a86.webp);
+       background-position: center;
+       background-size: cover;
+
+
+       width: 20vw;
+       background-color: red;
+
+   }
+
+   .part3nav1 {
+
+       padding: 5vh 10vw;
+       align-items: center;
+       justify-content: space-between;
+       display: flex;
+   }
+
+   .part3nav1 h1 {
+       font-size: 2vw;
+       font-weight: 400;
+
+   }
+
+   .part3nav1 h1:hover {
+       font-weight: 900;
+   }
+
+   .part3nav1 button {
+       font-size: 1vw;
+       background-color: transparent;
+       font-weight: 900;
+       padding: 1vh 1vw;
+   }
+
+   .part3nav1 button:hover {
+       background-color: black;
+       color: white;
+   }
+
+   .part5main {
+       overflow-x: scroll;
+       justify-content: center;
+       display: flex;
+       scroll-behavior: smooth;
+   }
+
+   .part5main::-webkit-scrollbar {
+       display: none;
+   }
+
+   .part5 {
+       padding: 5vh 2vw;
+       display: flex;
+
+   }
+
+   .part5-box {
+       height: 380PX;
+       width: 250PX;
+   }
+
+   .part5-box:hover {
+       cursor: pointer;
+       box-shadow: 3px 4px 10px black;
+   }
+
+
+   .sub {
+       background-color: rgba(0, 0, 0, 0.302);
+       height: 35vh;
+       background-image: url();
+       background-size: cover;
+       background-position: center;
+   }
+
+   .sub img {
+       height: 100%;
+       width: 100%;
+   }
+
+   .part5-dets {
+
+       margin-top: 2vh;
+   }
+
+   .part5-dets h1 {
+       font-size: 1.2vw;
+       font-weight: 300;
+       text-align: center;
+   }
+
+   .part5-dets i {
+       color: yellow;
+   }
+
+   .instagram {
+    
+    gap: 3vw;
+       display: flex;
+       padding: 10vh 5vw;
+       overflow: scroll;
+       scroll-behavior: smooth;
+   }
+
+   .instagram::-webkit-scrollbar {
+       display: none;
+   }
+
+   .inslink {
+       flex-shrink: 0;
+       height: 300px;
+       width: 300px;
+       flex-wrap: ;
+       object-fit: cover;
+       object-position: center;
+   }
+   .instagram1{
+}
+.HOVI:hover{
+     
+    transform: scale(2);
+   }
+   .inst {
+       align-items: center;
+       display: flex;
+
+       margin-top: 5VH;
+       margin-left: 4VW;
+       font-size: 2VW;
+       font-weight: 400;
+   }
+
+   .instagram-box img {
+       object-fit: cover;
+       object-position: top;
+       height: 100%;
+       width: 100%;
+   }
+
+
+   .back {
+       border: 2px solid black;
+       text-decoration: none;
+       color: black;
+       padding: 8px 10px;
+       margin-left: 43%;
+       margin-top: -70px;
+   }
+
+   .back:hover {
+       background-color: black;
+       color: white;
+   }
